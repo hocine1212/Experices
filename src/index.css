@@ -1,0 +1,177 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #0f172a;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.loading {
+  margin: 3rem auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 5px solid #94a3b8;
+  border-top-color: #14b8a6;
+  animation: spinner 0.5s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.title h2 {
+  font-size: 2.441rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.underline {
+  width: 7rem;
+  height: 0.25rem;
+  background-color: #14b8a6;
+  margin: 1rem auto 0;
+}
+
+.btn-container {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.job-btn {
+  background-color: transparent;
+  border: transparent;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.job-btn:hover {
+  color: #14b8a6;
+  box-shadow: 0 2px #14b8a6;
+}
+.active-btn {
+  color: #14b8a6;
+  box-shadow: 0 2px #14b8a6;
+}
+
+.jobs-center {
+  width: min(80vw, 1120px);
+  margin: 3rem auto 5rem;
+}
+
+.job-company {
+  margin: 0.75rem 0;
+  display: inline-block;
+  color: #334155;
+  background-color: #cbd5e1;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.job-date {
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.job-desc {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.job-desc p {
+  line-height: 1.5;
+  color: #334155;
+}
+
+.job-icon {
+  color: #14b8a6;
+}
+
+@media screen and (min-width: 992px) {
+  .jobs-center {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    column-gap: 4rem;
+  }
+
+  .btn-container {
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .job-btn:hover {
+    color: #14b8a6;
+    box-shadow: -2px 0px #14b8a6;
+  }
+  .active-btn {
+    color: #14b8a6;
+    box-shadow: -2px 0px #14b8a6;
+  }
+}
