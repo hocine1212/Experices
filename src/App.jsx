@@ -23,6 +23,7 @@ const App = () => {
   if (loading) {
     return <section className="section loading"></section>;
   }
+
   const { dates, company, title, duties } = jobs[currentItem];
 
   return (

@@ -90,7 +90,7 @@ h5 {
 }
 
 .btn-container {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   gap: 0.75rem;
   justify-content: center;
@@ -98,8 +98,8 @@ h5 {
 
 .job-btn {
   background-color: transparent;
-  border: transparent;
-  letter-spacing: 1.5px;
+  border-color: transparent;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: 0.3s ease-in-out all;
 }
@@ -154,14 +154,13 @@ h5 {
 
 @media screen and (min-width: 992px) {
   .jobs-center {
+    width: min(90vw, 1120px);
     display: grid;
     grid-template-columns: 200px 1fr;
-
     column-gap: 4rem;
   }
 
   .btn-container {
-    gap: 1.5rem;
     flex-direction: column;
     justify-content: flex-start;
   }
